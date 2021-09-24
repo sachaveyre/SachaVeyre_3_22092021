@@ -47,6 +47,11 @@ h2
     margin-top: 0px;
     padding-top: 30px;
 }
+#titre
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 /* Section Reservation */
 #bouton_explore
 {
@@ -80,7 +85,6 @@ h2
     margin-top: 20px;
     box-shadow: 4px 4px 10px  lightgrey;
     margin-right: 10px;
-    
 }
 h3
 {
@@ -96,6 +100,7 @@ h3
 {
     margin-left: 20px;
 }
+
 /* Section Restaurants */
 #restaurants
 {
@@ -159,7 +164,7 @@ h3
     font-size: 1.5em;
     align-items: center;
     display: flex;
-   margin-right: 5%;
+    margin-right: 5%;
 }
 /* Footer */
 .container_footer p
