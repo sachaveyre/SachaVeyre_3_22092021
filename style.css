@@ -1,0 +1,98 @@
+@font-face
+{
+font-family: 'Shrikhand-Regular';
+src: url('Shrikhand-Regular.otf')
+}
+@font-face
+{
+font-family: 'Roboto-Black';
+src: url('Roboto-Black.ttf')
+}
+
+*
+{
+    font-family:Roboto-Black, impact , arial;
+}
+/* Header */
+h1
+{
+    font-family: Shrikhand-Regular;
+    text-align: center;
+    margin-bottom: 10px;
+}
+body
+{
+    margin: 0px;
+}
+#location
+{
+    text-align: center;
+    background-color: lightgrey;
+    height: 35px;
+    width: 100%;
+    padding-top: 12px;
+}
+.fa-map-marker-alt
+{
+    margin-right: 15px;
+}
+#reservation
+{
+    text-align: center;
+    background-color: #f2f2f2;
+    height: 250px;
+}
+h2
+{
+    margin-top: 0px;
+    padding-top: 30px;
+}
+/* Section Reservation */
+#bouton_explore
+{
+    display:block;
+    height:50px;
+    background-color: purple;
+    color: white;
+    text-align:center;
+    padding-top: 2px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    cursor: pointer;
+}
+#bouton_explore a
+{
+    color:white ;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+/* Section Reservation */
+li
+{
+  
+    height:50px;
+    background-color: #f2f2f2;
+    padding-top: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px  lightgrey;
+    margin-right: 10px;
+    
+}
+h3
+{
+    display: inline;    
+}
+.icone-fonctionnement
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2em
+}
+#fonctionnement h2
+{
+    margin-left: 20px;
+}
