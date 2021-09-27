@@ -53,7 +53,7 @@ h2
     padding-right: 5%;
 }
 /* Section Reservation */
-#bouton_explore
+.bouton_explore
 {
     display:block;
     height:50px;
@@ -67,7 +67,7 @@ h2
     border-radius: 40px;
     cursor: pointer;
 }
-#bouton_explore a
+.bouton_explore a
 {
     color:white ;
     text-decoration: none;
@@ -106,6 +106,11 @@ h3
 {
     background-color: #f2f2f2;
     padding-bottom: 40px;
+}
+#restaurants a
+{
+    color: black;
+    text-decoration: none;
 }
 .image_la_palette
 {
@@ -153,7 +158,8 @@ h3
 }
 #restaurants h4
 {
-    margin-bottom: 4px;
+    margin-bottom: 0.8%;
+    font-size: 1.2em;
 }
 .texte_description
 {
@@ -165,6 +171,7 @@ h3
     align-items: center;
     display: flex;
     margin-right: 5%;
+    margin-top: 2%;
 }
 /* Footer */
 .container_footer p
@@ -200,3 +207,100 @@ ul
 {
     margin-right: 10px;
 }
+/* Page des restaurants */
+
+/* Page des restaurants - Header  */
+
+#acceuil
+{
+    display: flex;
+    justify-content: space-around ;
+}
+#acceuil a 
+{
+    margin-top: 8%;
+    width: 20px ;
+    height: 20px;
+}
+
+/* Page des restaurants - contenu */
+.fa-heart
+{
+    padding-top: 7%;
+}
+.menu_selection h2
+{
+    margin-left: 2%;
+    font-size: 1em;
+}
+#description_menu
+{
+    display: flex;
+    justify-content: space-around;
+}
+.images_restaurants
+{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+
+}
+#description_menu h2
+{
+    font-family: Shrikhand-Regular ;
+
+}
+.menu
+{
+    background-color: #f2f2f2;
+    padding-bottom: 40px;
+    border-radius: 30px 30px 0px 0px ;
+    margin-top: -25px;
+}
+.menu_selection
+{
+    width: 90%;
+    margin-left: 5%;
+}
+.description_restaurant
+{
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 4%;
+}
+.description_restaurant h4
+{
+    margin-bottom: 4px;
+    margin-top: 4px;
+    font-size: 1em;
+    white-space: normal;
+    
+}
+.description_restaurant p
+{
+    margin-top: 2px;
+    font-size: 0.8em;
+    width: 240px;
+    white-space: nowrap;
+ 
+}
+.price
+{
+   margin-right: 8%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   margin-bottom: 1em;
+}
+.texte_description
+{
+    width: 240px;
+}
+.bouton_commander
+{
+    margin-top: 10%;
+}
+/* Page des restaurants - Footer */
