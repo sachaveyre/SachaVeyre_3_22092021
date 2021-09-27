@@ -210,7 +210,10 @@ ul
 /* Page des restaurants */
 
 /* Page des restaurants - Header  */
-
+.fa-envelope
+{
+    color: white;
+}
 #acceuil
 {
     display: flex;
