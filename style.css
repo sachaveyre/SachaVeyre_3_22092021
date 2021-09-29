@@ -180,7 +180,6 @@ h3
     align-items: center;
     display: flex;
     margin-right: 5%;
-    margin-top: 2%;
 }
 /* Footer */
 .container_footer p
@@ -320,4 +319,187 @@ ul
 {
     margin-top: 10%;
 }
-/* Page des restaurants - Footer */
+/* Responsive tablette */
+
+@media only screen
+
+and (min-device-width: 500px)
+
+and (max-device-width: 1200px)
+
+{
+#description .fa-heart
+{
+    padding-top: 21%;
+}
+#description_menu .fa-heart
+{
+   padding-top: 4%;
+}
+.fa-heart
+{
+    font-size: 2em;
+}
+#acceuil a
+{
+    margin-top: 4%;
+}
+.images
+{
+    height: 400px;
+}
+h2 
+{
+    text-align: center;
+    font-size: 2em;
+}
+.container_footer
+{
+    text-align: center;
+    font-size: 2em;
+}
+.footer_list
+{
+    padding-left: 0px;
+}
+#restaurants h4
+{
+    font-size: 2em;
+}
+#restaurants p
+{
+    font-size: 2em;
+}
+.texte_description
+{
+    width: auto;
+}
+h3 
+{
+    font-size: 1.5em;
+}
+.menu h2 , .menu h4 , .menu p , .price 
+{
+    font-size: 1.8em;
+}
+.menu h4
+{
+    margin-top: 10%;
+}
+.bouton_explore 
+{
+    height: auto;
+}
+.bouton_explore a 
+{
+    padding-bottom: 14%;
+}
+#reservation
+{
+    font-size: 1.3em;
+    word-wrap: break-word;
+}
+#location
+{
+    font-size: 1.5em;
+}
+#reservation
+{
+    height: 300px;
+}
+}
+@media only screen
+
+and (min-device-width: 1200px)
+
+and (max-device-width: 4000px)
+/* Responsive ordinateur */
+{
+h2 
+{
+    text-align: center;   
+    font-size: 2em; 
+    padding-top: 50px;
+    
+}
+#reservation h2
+{
+    padding-bottom: 0px ;
+}
+li
+{
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    justify-content:center;
+}
+#fonctionnement li
+{
+    height: 100px;
+    width: 32%;
+    padding-top: 4%;
+}
+h3 
+{
+    margin: 0;
+}
+#carte_restaurants
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#restaurants a 
+{
+    width: 25%;
+    
+}
+.images
+{
+    height: 400px;
+}
+#reservation
+{
+    height: 220px;
+}
+.footer_list
+{
+    display: flex;
+    flex-direction: column;
+}
+.container_footer p , h1
+{
+    text-align: center;
+    font-size: 3em;
+}
+/* Responsive ordinateur page restaurant */
+.menu
+{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1350px;
+    border-radius: 30px 30px 30px 30px;
+}
+.images_restaurants
+{
+    height: 1400px;
+}
+.footer_list
+{
+    padding-left: 0px;
+}
+.container_footer p 
+{
+    margin-left: 0px;
+}
+.container_footer
+{
+    margin-top: 50px;
+}
+#acceuil a
+{
+    margin-top: 2.5%;
+    font-size: 2em;
+}
+}
