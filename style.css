@@ -17,6 +17,23 @@ src: url('Roboto-light.ttf')
 {
     font-family:Roboto-Black, impact , arial;
 }
+/* Loader */
+.loader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lettre
+{
+    font-family: Shrikhand-Regular;
+    font-size: 120px;
+    color: white;
+    animation: loader_light 1s linear infinite;
+}
 /* Header */
 h1
 {
@@ -74,6 +91,12 @@ h2
     margin-right: auto;
     border-radius: 40px;
     cursor: pointer;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    
+}
+.bouton_explore :hover
+{
+    background-image: linear-gradient(0deg,rgba(122, 90, 155, 0.9),rgba(238, 147, 212, 0.9));
 }
 .bouton_explore a
 {
@@ -82,6 +105,7 @@ h2
     width: 100%;
     display: block;
 }
+
 /* Section Reservation */
 #fonctionnement li
 {
@@ -93,6 +117,7 @@ h2
     margin-top: 20px;
     box-shadow: 4px 4px 10px  lightgrey;
     margin-right: 10px;
+    list-style-type: kannada ;
 }
 h3
 {
@@ -319,6 +344,24 @@ ul
 {
     margin-top: 10%;
 }
+/*  Keyframes */
+
+@keyframes loader_light {
+    0% {
+      color: purple;
+      text-shadow: 0 0 7px pink ;
+    }
+    90% {
+        color: white;
+        text-shadow: none;
+    }
+    100% {
+        color: purple;
+      text-shadow: 0 0 7px pink ;
+      
+    }
+  } 
+  
 /* Responsive tablette */
 
 @media only screen
@@ -407,6 +450,10 @@ h3
 {
     height: 300px;
 }
+.container_footer p 
+{
+    margin-left: 0px;
+}
 }
 @media only screen
 
@@ -435,9 +482,10 @@ li
 }
 #fonctionnement li
 {
-    height: 100px;
-    width: 32%;
-    padding-top: 4%;
+    height: 45px;
+    width:30%;
+    padding-top: 1%;
+    margin-left: 15px;
 }
 h3 
 {
@@ -456,7 +504,7 @@ h3
 }
 .images
 {
-    height: 400px;
+    height: 300px;
 }
 #reservation
 {
@@ -502,4 +550,5 @@ h3
     margin-top: 2.5%;
     font-size: 2em;
 }
+
 }
