@@ -20,15 +20,16 @@ src: url('Roboto-light.ttf')
 /* Loader */
 .loader {
     position: absolute;
-    height: 10%;
+    height: 100%;
     width: 100%;
-    background: black;
+    background : black ; 
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
     animation: loader 2s linear forwards ;
-    margin-top: 0px;
+    margin-top: -20px;
 }
 .lettre
 {
@@ -37,6 +38,8 @@ src: url('Roboto-light.ttf')
     color: white;
     animation: loader_light 2s linear forwards ;
     z-index: 0;
+    
+
 }
 /* Header */
 h1
@@ -95,12 +98,12 @@ h2
     border-radius: 40px;
     cursor: pointer;
     background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    transform: scale(100%);
+    transform: scale(1);
  
 }
 .bouton_explore:hover 
 {
-    transform: scale(120%);
+    transform: scale(1.2);
     transition-duration: 1s;
     background-color: blue;
 }
@@ -130,7 +133,11 @@ h2
 {
     background-color: rgb(212, 177, 212);
     transition-duration: 1s;
-   
+    
+}
+#fonctionnement li:hover  .icone-fonctionnement
+{
+color: purple;
 }
 h3
 {
@@ -232,27 +239,26 @@ ol
 .texte_description
 {
     margin-left: 5%;
+    width: 70%;
 }
 .fa-heart
 {
     font-size: 1.5em;
-    align-items: center;
+    
     display: flex;
     margin-right: 6%;
     color: black;
     opacity: 1;
-    
 }
 
-.fa-heart:hover::before{
+.fa-heart:hover{
     background: linear-gradient(0deg,#f37ad5 0%,#670e9b 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     font-weight: bold;
-    
-    
+    animation: heart 2s ease-in-out;
 }
 /* Footer */
 .container_footer p
@@ -289,7 +295,7 @@ ul
     margin-right: 10px;
 }
 /* Page des restaurants */
-#restaurants , footer
+#restaurants , footer , #fonctionnement
 {
 animation : apparition 2s 1 ;
 }
@@ -361,35 +367,37 @@ animation : apparition 2s 1 ;
     justify-content: space-between;
     background-color: white;
     margin-top: 4%;
+    cursor: pointer;
 }
 .description_restaurant h4
 {
     margin-bottom: 4px;
     margin-top: 4px;
     font-size: 1em;
-    white-space: normal;
-    
+    white-space: nowrap;
+    text-overflow: ellipsis;  
+    overflow: hidden;  
 }
 .description_restaurant p
 {
     margin-top: 2px;
     font-size: 0.8em;
-    width: 240px;
+    width: auto;
     white-space: nowrap;
     font-family: Roboto-Black-light;
+    text-overflow: ellipsis;
+    overflow: hidden;
  
 }
 .price
 {
-   margin-right: 8%;
-   display: flex;
-   flex-direction: column;
+   margin-right: 0%;
+   display: inline-flex ;
+   flex-direction:column;
    justify-content: flex-end;
    margin-bottom: 1em;
-}
-.texte_description
-{
-    width: 240px;
+   padding-left: 45px;
+   text-overflow: ellipsis;
 }
 .bouton_commander
 {
@@ -410,23 +418,93 @@ animation : apparition 2s 1 ;
     animation: entrees_effect 2s linear ;
     
 }
+
+
+.description_restaurant:hover .texte_description
+{
+    animation-name: texte_description_anime;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
 .atc
 {
-    height: 80px;
-    width: 10%;
-    padding: 0px 5%;
+    border-radius: 0 10px 10px 0;
+    animation-name: div_verte ;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;  
+    display: flex;
+}
+.fa-check-circle
+{
     display: flex;
     justify-content: center;
-    right: 0px;
-    transform-origin: right;
-    color: #fff;
-    background-color: #99e2d0;
-    border-radius: 0px 15px 15px 0px;
-    font-size: 18px;
-    ;
+    align-items: center;
+    color: white;
+    font-size: 0em;
+    padding-left: 2%; 
+}
+.description_restaurant:hover .fa-check-circle
+{
+    animation: validate_order 0.5s ease-in-out both;
+    animation-delay: 0.1s;
 }
 /*  Keyframes */
-
+@keyframes heart {
+    0% {
+    color: black;
+    opacity: 1;
+    }
+    100% {
+    background: linear-gradient(0deg,#f37ad5 0%,#670e9b 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    }
+}
+@keyframes validate_order {
+    0% {
+        
+        display: none;
+        font-size: 0em;
+        opacity: 1;
+        color: white;
+        transform: rotate(0deg);
+        transform-origin: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    1% {
+        
+        font-size: 1.5em;
+        opacity: 1;
+    }
+    100% {
+        font-size:1.5em;
+        opacity: 1;
+        transform: rotate(360deg);
+        transform-origin: center;
+        overflow: hidden;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@keyframes div_verte {
+    0% {
+        width: 0px;
+    }
+    100% {
+        background-color: rgb(42, 185, 130);
+    }
+}
+@keyframes texte_description_anime {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 50%;
+    }
+}
 @keyframes loader_light {
     0% {
       color: purple;
@@ -465,7 +543,6 @@ animation : apparition 2s 1 ;
         z-index: 10;
       }
       100%{
-          color: none;
           text-shadow: none;
           opacity:0;
           display: none;
@@ -481,26 +558,36 @@ animation : apparition 2s 1 ;
           opacity: 1;
           z-index: 10;
       }
+      99.99%
+      {
+        width: 100%;
+        height: 100%;
+      }
       100%{
           opacity: 0;
           display: none;
           z-index: 0;
+          width: 0px;
+          height: 0px;
       }
   }
   @keyframes apparition {
     0% {opacity:0;}
-99% {opacity:0;}
-100% {opacity:1;}
+    99% {opacity:0;}
+    100% {opacity:1;}
 }
   @keyframes entrees_effect{
     0% {
         opacity: 0;
+        transform: translatey(100px);
     }
     25% {
         opacity: 0;
+        transform: translateY(10px)
     }
     100% {
         opacity: 1;
+        transform: translateY(0px)
     }
     }
   
@@ -583,14 +670,11 @@ h3
 {
     font-size: 1.3em;
     word-wrap: break-word;
+    height: 300px;
 }
 #location
 {
     font-size: 1.5em;
-}
-#reservation
-{
-    height: 300px;
 }
 .container_footer p 
 {
@@ -608,12 +692,18 @@ and (min-device-width: 1200px)
 and (max-device-width: 4000px)
 /* Responsive ordinateur */
 {
+#description_menu
+{
+    display: flex;
+}
+#description_menu .fa-heart
+{
+    padding-top: 0;
+}
 h2 
 {
     text-align: center;   
     font-size: 2em; 
-    padding-top: 50px;
-    
 }
 #reservation h2
 {
@@ -654,7 +744,7 @@ h3
 }
 #reservation
 {
-    height: 220px;
+    height: 250px;
 }
 .footer_list
 {
@@ -700,5 +790,8 @@ h3
     margin-top: 2.5%;
     font-size: 2em;
 }
-
+.fa-heart
+{
+    margin-top:5%
+}
 }
