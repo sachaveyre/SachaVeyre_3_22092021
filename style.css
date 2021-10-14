@@ -10,7 +10,7 @@ src: url('Roboto-Black.ttf')
 }
 @font-face
 {
-font-family: 'Roboto-Black-light';
+font-family: 'Roboto-light';
 src: url('Roboto-light.ttf')
 }
 *
@@ -72,7 +72,7 @@ body
 }
 #reservation p
 {
-    font-family:Roboto-Black-light ;
+    font-family:Roboto-light ;
 }
 h2
 {
@@ -229,7 +229,7 @@ ol
 {
     font-size: 1em;
     margin-top: 1px;
-    font-family: Roboto-Black-light ;
+    font-family: Roboto-light ;
 }
 #restaurants h4
 {
@@ -384,7 +384,7 @@ animation : apparition 2s 1 ;
     font-size: 0.8em;
     width: auto;
     white-space: nowrap;
-    font-family: Roboto-Black-light;
+    font-family: Roboto-light;
     text-overflow: ellipsis;
     overflow: hidden;
  
