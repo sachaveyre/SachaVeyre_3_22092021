@@ -11,11 +11,11 @@ src: url('Roboto-Black.ttf')
 @font-face
 {
 font-family: 'Roboto-light';
-src: url('Roboto-light.ttf')
+src: url('Roboto-Light.ttf')
 }
 *
 {
-    font-family:Roboto-Black, impact , arial;
+    font-family:Roboto-Black,Robot-light, impact , arial;
 }
 /* Loader */
 .loader {
