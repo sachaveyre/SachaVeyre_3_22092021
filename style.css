@@ -432,6 +432,9 @@ animation : apparition 2s 1 ;
     animation-name: div_verte ;
     animation-duration: 1.5s;
     animation-fill-mode: both;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .fa-check-circle
@@ -443,7 +446,7 @@ animation : apparition 2s 1 ;
     font-size: 0em;
     padding-left: 2%; 
     margin-top: 5%;
-    line-height: 2;
+    
 }
 .description_restaurant:hover .fa-check-circle
 {
