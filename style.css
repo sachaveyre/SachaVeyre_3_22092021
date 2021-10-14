@@ -443,11 +443,16 @@ animation : apparition 2s 1 ;
     color: white;
     font-size: 0em;
     padding-left: 2%; 
+    margin-top: 5%;
 }
 .description_restaurant:hover .fa-check-circle
 {
     animation: validate_order 0.5s ease-in-out both;
     animation-delay: 0.1s;
+}
+.fa-check-circle
+{
+    line-height: 2%;
 }
 /*  Keyframes */
 @keyframes heart {
@@ -793,6 +798,6 @@ h3
 }
 .fa-heart
 {
-    margin-top:5%
+    margin-top:3.2%
 }
 }
