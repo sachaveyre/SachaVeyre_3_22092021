@@ -433,6 +433,7 @@ animation : apparition 2s 1 ;
     animation-duration: 1.5s;
     animation-fill-mode: both;  
     display: flex;
+    justify-content: center;
 }
 .fa-check-circle
 {
