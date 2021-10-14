@@ -432,8 +432,7 @@ animation : apparition 2s 1 ;
     animation-name: div_verte ;
     animation-duration: 1.5s;
     animation-fill-mode: both;  
-    display: flex;
-    justify-content: center;
+    
 }
 .fa-check-circle
 {
@@ -444,16 +443,14 @@ animation : apparition 2s 1 ;
     font-size: 0em;
     padding-left: 2%; 
     margin-top: 5%;
+    line-height: 2;
 }
 .description_restaurant:hover .fa-check-circle
 {
     animation: validate_order 0.5s ease-in-out both;
     animation-delay: 0.1s;
 }
-.fa-check-circle
-{
-    line-height: 2%;
-}
+
 /*  Keyframes */
 @keyframes heart {
     0% {
@@ -476,7 +473,7 @@ animation : apparition 2s 1 ;
         opacity: 1;
         color: white;
         transform: rotate(0deg);
-        transform-origin: center;
+        
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -489,7 +486,7 @@ animation : apparition 2s 1 ;
         font-size:1.5em;
         opacity: 1;
         transform: rotate(360deg);
-        transform-origin: center;
+        
         overflow: hidden;
         padding-left: 20px;
         padding-right: 20px;
