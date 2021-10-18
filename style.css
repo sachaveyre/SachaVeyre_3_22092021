@@ -98,13 +98,12 @@ h2
     border-radius: 40px;
     cursor: pointer;
     background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    transform: box-shadow 0.3s ease-in-out;
+    transform: box-shadow 0.3s ease-in-out
 }
 .bouton_explore:hover 
 {
-    
     transition-duration: 1s;
-    background-color: blue;
+    background-color: purple;
     box-shadow: 0px 5px 20px 0px black;
 }
 .bouton_explore a
@@ -253,7 +252,6 @@ ol
 .fa-heart:hover{
     
     animation: heart 2s ease-in ;
-    
     animation-fill-mode: both;
 }
 /* Footer */
@@ -453,15 +451,14 @@ animation : apparition 2s 1 ;
 /*  Keyframes */
 @keyframes heart {
     0% {
-        color: black;
-        background-color: blanchedalmond;
+        background: linear-gradient(0deg,#f37ad5 0%,#670e9b 100%);
         background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         cursor: pointer;
         font-weight: bold;
+        background-position-x:-10px ;
         
-    
     }
     100% {
         background: linear-gradient(0deg,#f37ad5 0%,#670e9b 100%);
@@ -470,8 +467,7 @@ animation : apparition 2s 1 ;
         -webkit-text-fill-color: transparent;
         cursor: pointer;
         font-weight: bold;
-        
-      
+        background-size: 100%;
     }
 }
 @keyframes validate_order {
@@ -710,7 +706,7 @@ and (max-device-width: 4000px)
 }
 #description_menu .fa-heart
 {
-    padding-top: 0;
+    padding-top: 1.5%;
 }
 h2 
 {
