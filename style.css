@@ -616,6 +616,10 @@ and (max-device-width: 1200px)
 {
    padding-top: 4%;
 }
+.texte_description h4
+{
+    width: 500px;
+}
 .fa-heart
 {
     font-size: 2em;
