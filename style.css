@@ -96,13 +96,14 @@ h2
     border-radius: 40px;
     cursor: pointer;
     background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    transform: box-shadow 0.3s ease-in-out
 }
 .bouton_explore:hover 
 {
     transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     background-image: linear-gradient(0deg,rgba(121, 36, 224, 0.9),rgba(236, 47, 183, 0.9));
     box-shadow: 0px 5px 20px 0px black;
+    transform: scale(1.01);
 }
 .bouton_explore a
 {
@@ -398,20 +399,15 @@ animation : apparition 2s 1 ;
 .entrees
 {
     animation: entrees_effect 1s linear ;
-    animation-delay: 0s;
 }
 .plats
 {
     animation: entrees_effect 1.5s linear ;
-   
 }
 .desserts
 {
     animation: entrees_effect 2s linear ;
-    
 }
-
-
 .description_restaurant:hover .texte_description
 {
     animation-name: texte_description_anime;
@@ -476,12 +472,10 @@ animation : apparition 2s 1 ;
         opacity: 1;
         color: white;
         transform: rotate(0deg);
-        
         padding-left: 0px;
         padding-right: 0px;
     }
     1% {
-        
         font-size: 1.5em;
         opacity: 1;
     }
@@ -489,7 +483,6 @@ animation : apparition 2s 1 ;
         font-size:1.5em;
         opacity: 1;
         transform: rotate(360deg);
-        
         overflow: hidden;
         padding-left: 20px;
         padding-right: 20px;
